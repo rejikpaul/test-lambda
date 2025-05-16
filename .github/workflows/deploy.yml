@@ -20,8 +20,8 @@ jobs:
 
     - name: Install dependencies and package Lambda
       run: |
-        pip install -r requirements.txt -t package/
-        cp lambda_function.py package/
+        pip install -r src/lambdaFunction1/requirements.txt -t package/
+        cp app.py package/
         cd package
         zip -r ../lambda.zip .
 
